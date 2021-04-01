@@ -1,5 +1,5 @@
 const exhibitionList = document.querySelector(".exhibition-list")
-const exhibitionURL = 'http://localhost:3000/exhibitions/28' 
+const exhibitionURL = 'http://localhost:3000/exhibitions/37' 
 const likeButton = document.querySelector(".like-button")
 const exhibitionLikes = document.querySelector(".likes")
 const exhibitionTitle = document.querySelector(".title")
@@ -7,7 +7,7 @@ const exhibitionImg = document.querySelector(".image")
 const exhibitionLength = document.querySelector(".length")
 const exhibitionDescription = document.querySelector(".comments")
 
-const exhibitionTwoURL ='http://localhost:3000/exhibitions/29' 
+const exhibitionTwoURL ='http://localhost:3000/exhibitions/38' 
 const likeButton2 = document.querySelector(".like-button2")
 const exhibitionLikes2 = document.querySelector(".likes2")
 const exhibitionTitle2 = document.querySelector(".title2")
@@ -15,7 +15,7 @@ const exhibitionLength2 = document.querySelector(".length2")
 const exhibitionImg2 = document.querySelector(".image2")
 const exhibitionDescription2 = document.querySelector(".comments2")
 
-const exhibitionThreeURL ='http://localhost:3000/exhibitions/30' 
+const exhibitionThreeURL ='http://localhost:3000/exhibitions/39' 
 const likeButton3 = document.querySelector(".like-button3")
 const exhibitionLikes3 = document.querySelector(".likes3")
 const exhibitionTitle3 = document.querySelector(".title3")
@@ -23,7 +23,7 @@ const exhibitionLength3 = document.querySelector(".length3")
 const exhibitionImg3 = document.querySelector(".image3")
 const exhibitionDescription3 = document.querySelector(".comments3")
 
-const exhibitionFourURL ='http://localhost:3000/exhibitions/31' 
+const exhibitionFourURL ='http://localhost:3000/exhibitions/40' 
 const likeButton4 = document.querySelector(".like-button4")
 const exhibitionLikes4 = document.querySelector(".likes4")
 const exhibitionTitle4 = document.querySelector(".title4")
@@ -31,7 +31,7 @@ const exhibitionLength4 = document.querySelector(".length4")
 const exhibitionImg4 = document.querySelector(".image4")
 const exhibitionDescription4 = document.querySelector(".comments4")
 
-const exhibitionFiveURL ='http://localhost:3000/exhibitions/32' 
+const exhibitionFiveURL ='http://localhost:3000/exhibitions/41' 
 const likeButton5 = document.querySelector(".like-button5")
 const exhibitionLikes5 = document.querySelector(".likes5")
 const exhibitionTitle5 = document.querySelector(".title5")
@@ -39,7 +39,7 @@ const exhibitionLength5 = document.querySelector(".length5")
 const exhibitionImg5 = document.querySelector(".image5")
 const exhibitionDescription5 = document.querySelector(".comments5")
 
-const exhibitionSixURL ='http://localhost:3000/exhibitions/33' 
+const exhibitionSixURL ='http://localhost:3000/exhibitions/42' 
 const likeButton6 = document.querySelector(".like-button6")
 const exhibitionLikes6 = document.querySelector(".likes6")
 const exhibitionTitle6 = document.querySelector(".title6")
@@ -47,7 +47,7 @@ const exhibitionLength6 = document.querySelector(".length6")
 const exhibitionImg6 = document.querySelector(".image6")
 const exhibitionDescription6 = document.querySelector(".comments6")
 
-const exhibitionSevenURL ='http://localhost:3000/exhibitions/34' 
+const exhibitionSevenURL ='http://localhost:3000/exhibitions/43' 
 const likeButton7 = document.querySelector(".like-button7")
 const exhibitionLikes7 = document.querySelector(".likes7")
 const exhibitionTitle7 = document.querySelector(".title7")
@@ -55,7 +55,7 @@ const exhibitionLength7 = document.querySelector(".length7")
 const exhibitionImg7 = document.querySelector(".image7")
 const exhibitionDescription7 = document.querySelector(".comments7")
 
-const exhibitionEightURL ='http://localhost:3000/exhibitions/35' 
+const exhibitionEightURL ='http://localhost:3000/exhibitions/44' 
 const likeButton8 = document.querySelector(".like-button8")
 const exhibitionLikes8 = document.querySelector(".likes8")
 const exhibitionTitle8 = document.querySelector(".title8")
@@ -63,7 +63,7 @@ const exhibitionLength8 = document.querySelector(".length8")
 const exhibitionImg8 = document.querySelector(".image8")
 const exhibitionDescription8 = document.querySelector(".comments8")
 
-const exhibitionNineURL ='http://localhost:3000/exhibitions/36' 
+const exhibitionNineURL ='http://localhost:3000/exhibitions/45' 
 const likeButton9 = document.querySelector(".like-button9")
 const exhibitionLikes9 = document.querySelector(".likes9")
 const exhibitionTitle9 = document.querySelector(".title9")
@@ -274,7 +274,7 @@ fetch(exhibitionNineURL)
     exhibitionLikes9.textContent = exhibition.likes
     likeButton9.addEventListener("click", () =>{
         likeAmount9 = parseInt(exhibitionLikes9.textContent)+1
-        exhibitionLikes9.textContent = likeAmount
+        exhibitionLikes9.textContent = likeAmount9
 
         fetch(exhibitionNineURL, {
             method:"PATCH",

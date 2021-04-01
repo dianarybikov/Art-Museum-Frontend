@@ -4,6 +4,7 @@
 }
 body{
     height: 1000px;
+    width:auto;
     
 }
 nav{
@@ -14,15 +15,13 @@ nav{
     background-repeat: no-repeat;
 }
 ul{
-    margin-left: 500px;
-    /* margin:0px; */
+    margin-left: 700px;
     margin-top: 0px;
 }
 
 ul li {
     list-style: none;
     display: inline-block;
-    /* float: left; */
     line-height: 100px;
 
 
@@ -54,51 +53,39 @@ h1{
 }
 
 div.info{
-        box-shadow: 0 10px 10px 5px black;
-        height: 500px;
-        width: 400px;
-        color:rgb(2, 2, 2);
-        background-color: rgb(255, 255, 255);
-        text-align: center;
-        margin-top: 70px;
-        margin:40px;
-        /* margin-right:200px; */
-        margin-left:150px; 
-        
+    width: 400px;
+    color:rgb(2, 2, 2);
+    background-color: rgb(255, 255, 255);
+    font-size: 19px;  
+    padding:50px;
 }
 
-div.customer-service{
-        box-shadow: 0 10px 10px 5px black;
-        padding: 20px;
-        height: 450px;
-        width: 400px;
-        color:rgb(2, 2, 2);
-        background-color: rgb(255, 255, 255);
-        /* margin-left: 500px; */
-        text-align: center;
-        margin-top: 50px;
-        margin: 40px;
-        /* float: left; */
-
-        
-
-}
 .info-card {
-    /* padding: 64px; */
-    display: flex;
+    margin: 200px;
+    display: block;
+    margin-top:0px;
+    margin-left:400px;
 }
 
 
 
 h2{
     padding:20px;
+    text-transform: uppercase;
 }
 
-h3{
-    padding:15px;
+h4{
+    padding:5px;
+    text-transform: uppercase;
 }
 
 p{
     padding:7px;
 }
+
+hr{
+    border:2px solid;
+    opacity: .50;
+}
+
 
