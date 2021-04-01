@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+}
+p {
+    /* margin: 10vh; */
+    padding: 10v;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(2, 34, 23);
+    margin-block-end: 1em;
+}
+
+div.visit-container{
+    bottom: 5px;
+    left: 10px;
+    text-align:left;
+    width: 600px;
+    overflow: hidden;
+}
+
+nav {
+    width:auto;
+    height:350px;
+    background-image: url('https://d26jxt5097u8sr.cloudfront.net/s3fs-public/styles/width_1400/public/2020-08/Overhead-visitors.jpg?itok=aH_SAxSu');
+    
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    border:0;
+    padding:0;
+    margin:0;
+    text-align: center;
+
+}
+
+/* nav{
+    width:100%;
+    height:100px;
+    background-color: rgb(12, 12, 12);
+    opacity: 0.20;
+} */
+ul{
+    margin-left: 700px;
+    /* margin:0px; */
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    /* float: left; */
+    line-height: 100px;
+
+
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+    padding: 0 20px; 
+}
+
+ul li a:hover {
+    color:rgb(121, 115, 115);   
+}
+
+a.covid-link{
+    color:black;
+    margin:0;
+}
+
+.column:last-child{
+    margin-right: 1.25em;
+}
+.column{
+    flex-basis: 50%;
+    /* margin:0 40rem; */
+}
+
+div.column{
+    display: table;
+    top:10px
+
+}
+
+div.vist-page{
+    display: flex;
+}
+
+.table{
+    border-collapse: collapse;
+    
+}
+
+.ticket{
+    border:2px solid;
+    padding:10px;
+    height:50px;
+}
+
+.colorado{
+    border:2px solid;
+    padding:10px;
+}
+
+.non-resident{
+    border:2px solid;
+    padding:10px;
+}
+
+.visit-image{
+    height: 275px;
+    margin:0px;
+    padding:0px;
+    width: 575px;
+}
+
+.covid {
+    color:rgb(92, 101, 157);
+    text-decoration: none;
+    font-size:20px;
+}
+
+.covid:hover{
+    color:rgb(29, 32, 57);
+}
+
+.contact{
+    color:rgb(92, 101, 157);
+    text-decoration: none;
+    font-size:16px;
+}
+
+.contact:hover{
+    color:rgb(29, 32, 57);
+}

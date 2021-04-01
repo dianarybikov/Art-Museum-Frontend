@@ -1,0 +1,62 @@
+const exhibitionList = document.querySelector(".exhibition-list")
+const exhibitionURL = 'http://localhost:3000/exhibitions' 
+const likeButton = document.querySelector(".like-button")
+const exhibitionLikes = document.querySelector(".likes")
+const exhibitionTitle = document.querySelector(".title")
+const exhibitionImg = document.querySelector(".image")
+const exhibitionLength = document.querySelector(".length")
+const exhibitionDescription = document.querySelector(".comments")
+
+fetch(exhibitionURL)
+.then(response =>response.json())
+.then(exhibitions => exhibitions.forEach(exhibition => {
+    
+    const exhibitionCard = document.createElement("li")
+
+    const name = document.createElement("h1")
+    name.textContent = exhibition.name
+
+    const image = document.createElement("img")
+    image.src = exhibition.image
+
+    const like = document.createElement("p")
+    like.textContent = exhibition.likes
+
+    const likeBtn = document.createElement("button")
+    likeBtn.className = 'like-btn'
+    likeBtn.innerText = "like"
+    
+    likeBtn.addEventListener("click", () =>{
+        likeAmount = parseInt(like.textContent)+1
+
+        like.textContent = likeAmount
+
+        fetch(exhibitionURL, {
+            method: "PATCH",
+            headers:{
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                likes: likeAmount
+            })
+        })
+    })
+    
+    exhibitionCard.append(image, name, like, likeBtn)
+    exhibitionList.append(exhibitionCard)
+
+
+}))
+
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey">$ 9.99 / year</li>
+    <li>10GB Storage</li>
+    <li>10 Emails</li>
+    <li>10 Domains</li>
+    <li>1GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
