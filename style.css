@@ -91,8 +91,14 @@ div.image-card{
     margin-left:50px;
 }
 
+.image-card:hover{
+    height:360px;
+    box-shadow: 5px 5px 5px 5px rgb(175, 175, 175);
+}
 a{
     text-decoration:none;
     color:black;
 }
+
+
 
